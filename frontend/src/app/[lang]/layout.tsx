@@ -78,29 +78,11 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body>
-        <UtilityNav
-          />
-        
-        <Navbar
-          links={navbar.links}
-          logoUrl={navbarLogoUrl}
-          logoText={navbar.navbarLogo.logoText}
-        />
-
-        <main className="dark:bg-black dark:text-gray-100 min-h-screen">
-          {children}
-        </main>
-
-        <Banner data={notificationBanner} />
-
-        <Footer
-          logoUrl={footerLogoUrl}
-          logoText={footer.footerLogo.logoText}
-          menuLinks={footer.menuLinks}
-          categoryLinks={footer.categories.data}
-          legalLinks={footer.legalLinks}
-          socialLinks={footer.socialLinks}
-        />
+        <div className="w-full h-screen background-image flex items-center justify-center">
+          <div className="tint w-full h-full flex items-center justify-center">
+              <img src="/public/vercel.svg" alt="Logo" className="h-32" /> 
+          </div>
+        </div>
       </body>
     </html>
   );

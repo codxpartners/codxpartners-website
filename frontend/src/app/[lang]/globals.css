@@ -135,3 +135,12 @@ body {
 .react-slideshow-container [aria-label="Next Slide"] {
   margin-right: 1rem;
 }
+
+.background-image {
+  background-image: url('/public/pexels-marvin-nast-664858130-21038404.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.tint {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the tint color and opacity */
+}
