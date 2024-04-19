@@ -43,7 +43,7 @@ export default function Hero({ data }: HeroProps) {
           <HighlightedText
             text={data.title}
             tag="h1"
-            className="text-5xl font-bold leading-none sm:text-6xl mb-8"
+            className="text-8xl font-bold leading-none sm:text-8xl mb-8"
             color="dark:text-violet-400"
           />
 

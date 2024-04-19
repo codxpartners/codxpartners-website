@@ -7,6 +7,7 @@ import { i18n } from "../../../i18n-config";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import UtilityNav from "./components/UtilityNav";
 import {FALLBACK_SEO} from "@/app/[lang]/utils/constants";
 
 
@@ -77,6 +78,9 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body>
+        <UtilityNav
+          />
+        
         <Navbar
           links={navbar.links}
           logoUrl={navbarLogoUrl}

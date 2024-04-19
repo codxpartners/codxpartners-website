@@ -2,6 +2,13 @@
 module.exports = { 
 	content: [ "./src/**/*.{js,ts,jsx,tsx}" ], 
 	theme: { 
+		fontFamily: {
+			'sans': ['"Gabarito"', 'system-ui'],
+			'serif': ['ui-serif', 'Georgia'],
+			'mono': ['ui-monospace', 'SFMono-Regular'],
+			'display': ['"Gabarito"'],
+			'body': ['"Open Sans"']
+		},
 		container: {
 			padding: {
 			  DEFAULT: '1rem',

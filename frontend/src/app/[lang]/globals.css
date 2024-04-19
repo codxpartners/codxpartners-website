@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "react-slideshow-image/dist/styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 
 body {
   @apply dark:bg-black
