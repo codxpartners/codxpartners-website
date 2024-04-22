@@ -93,7 +93,7 @@ export default async function RootLayout({
           <div className="md:w-5/12 w-full pl-4 md:pl-20 flex flex-col justify-end" style={{ height: '100%' }}>
             <div style={{ marginBottom: '25%' }}>
               <Image
-                src="https://graceful-talent-f765bfd7e2.media.strapiapp.com/Icon_3e2c39791e.svg"
+                src="https://graceful-talent-f765bfd7e2.media.strapiapp.com/Icon_3e2c39791e_5d7919cc91.svg"
                 width={60}
                 height={60}
                 alt="Codx Partners"
