@@ -95,7 +95,7 @@ export default async function RootLayout({
               <Image
                 src="https://graceful-talent-f765bfd7e2.media.strapiapp.com/Icon_3e2c39791e_5d7919cc91.svg"
                 width={60}
-                height={60}
+                height={60} 
                 alt="Codx Partners"
               />
               <h1 className="text-3xl md:text-5xl text-white font-display pt-10">We know how you’re feeling...</h1>
