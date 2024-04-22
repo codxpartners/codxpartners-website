@@ -7,8 +7,9 @@ import { i18n } from "../../../i18n-config";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Image from "next/image";
 import UtilityNav from "./components/UtilityNav";
-import {FALLBACK_SEO} from "@/app/[lang]/utils/constants";
+import { FALLBACK_SEO } from "@/app/[lang]/utils/constants";
 
 
 async function getGlobal(lang: string): Promise<any> {
@@ -37,7 +38,7 @@ async function getGlobal(lang: string): Promise<any> {
   return await fetchAPI(path, urlParamsObject, options);
 }
 
-export async function generateMetadata({ params } : { params: {lang: string}}): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
   const meta = await getGlobal(params.lang);
 
   if (!meta.data) return FALLBACK_SEO;
@@ -64,7 +65,7 @@ export default async function RootLayout({
   const global = await getGlobal(params.lang);
   // TODO: CREATE A CUSTOM ERROR PAGE
   if (!global.data) return null;
-  
+
   const { notificationBanner, navbar, footer } = global.data.attributes;
 
   const navbarLogoUrl = getStrapiMedia(
@@ -78,11 +79,37 @@ export default async function RootLayout({
   return (
     <html lang={params.lang}>
       <body>
-        <div className="w-full h-screen background-image flex items-center justify-center">
-          <div className="tint w-full h-full flex items-center justify-center">
-              <img src="/public/vercel.svg" alt="Logo" className="h-32" /> 
+        <div className="w-full h-screen tint flex flex-col md:flex-row">
+          <div className="hidden md:block md:w-3/12 w-full image-tint">
+            <Image src="https://images.pexels.com/photos/878153/pexels-photo-878153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Endless journey"
+              className="object-cover w-full h-auto md:h-full"
+              width={450}
+              height={850}
+            />
+          </div>
+          <div className="md:w-5/12 w-full pl-4 md:pl-20 flex flex-col justify-end" style={{ height: '100%' }}>
+            <div style={{ marginBottom: '25%' }}>
+              <Image
+                src="http://localhost:1337/uploads/Icon_3e2c39791e.svg"
+                width={60}
+                height={60}
+                alt="Codx Partners"
+              />
+              <h1 className="text-3xl md:text-5xl text-white font-display pt-10">We know how you’re feeling...</h1>
+              <p className="text-white font-light leading-relaxed pt-4 mr-4 md:mr-40">
+                We help business leaders and their partners design fit-for-purpose customer experiences that are ruthlessly aligned to your business vision that drive growth, reduce cost and mitigate risk.
+              </p>
+
+              <p className="text-white font-bold pt-6">Coming soon</p>
+              <p className="text-white font-light pt-6">
+                <a href="mailto:hello@codxpartners.com">hello@codxpartners.com</a>
+              </p>
+            </div>
           </div>
         </div>
+
+
       </body>
     </html>
   );

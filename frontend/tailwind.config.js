@@ -3,10 +3,10 @@ module.exports = {
 	content: [ "./src/**/*.{js,ts,jsx,tsx}" ], 
 	theme: { 
 		fontFamily: {
-			'sans': ['"Gabarito"', 'system-ui'],
+			'sans': ['"Inter"', 'system-ui'],
 			'serif': ['ui-serif', 'Georgia'],
 			'mono': ['ui-monospace', 'SFMono-Regular'],
-			'display': ['"Gabarito"'],
+			'display': ['"Playfair Display"'],
 			'body': ['"Open Sans"']
 		},
 		container: {

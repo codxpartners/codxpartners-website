@@ -3,7 +3,7 @@ import {sectionRenderer} from './utils/section-renderer';
 import {getPageBySlug} from "@/app/[lang]/utils/get-page-by-slug";
 
 
-export default async function RootRoute({params}: { params: { lang: string } }) {
+export default async function RootRoute({params}: { params: { lang: "en" } }) {
     try {
       const page = await getPageBySlug('home', params.lang)
       if (page.error && page.error.status == 401)
