@@ -96,11 +96,11 @@ export default async function RootLayout({
                 src="https://graceful-talent-f765bfd7e2.media.strapiapp.com/Icon_3e2c39791e_5d7919cc91.svg"
                 width={60}
                 height={60} 
-                alt="Codx Partners"
+                alt="Luminate Partners"
               />
               <h1 className="text-3xl md:text-5xl text-white font-display pt-10">We know how you’re feeling...</h1>
               <p className="text-white font-light leading-relaxed pt-4 mr-4 md:mr-40">
-                We help business leaders and their partners design fit-for-purpose customer experiences that are ruthlessly aligned to your business vision that drive growth, reduce cost and mitigate risk.
+                We help business leaders, their teams, partners and providers design fit-for-purpose customer experiences that are ruthlessly aligned to your business vision that drive growth, reduce cost and mitigate risk.
               </p>
 
               <p className="text-white font-bold pt-6">Coming soon</p>
@@ -108,7 +108,7 @@ export default async function RootLayout({
               <div data-mooform-id="41ac37d3-a615-4e97-a220-e76c0786ab07" ></div>
 
               <p className="text-white font-light pt-6">
-                <a href="mailto:hello@codxpartners.com">hello@codxpartners.com</a>
+                <a href="mailto:hello@luminatecx.com">hello@luminatecx.com</a>
               </p>
             </div>
           </div>
